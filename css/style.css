@@ -1,0 +1,74 @@
+.has-same-height .card {
+    height: 320px;
+    overflow: hidden;
+  }
+  
+  .card-content h3 {
+    text-align: center;
+  }
+  
+  .table-profile td,
+  th {
+    border: none !important;
+  }
+  
+  .table-profile td:first-of-type {
+    font-weight: bold;
+  }
+  
+  .skills-content .media {
+    margin: 0 !important;
+    padding: 4px !important;
+    border: 0 !important;
+  }
+  
+  .skills-content .progress {
+    height: 4px !important;
+  }
+  
+  .custom-tags {
+    text-align: center !important;
+    display: block;
+  }
+  
+  .portfolio-container .card {
+    margin-bottom: 2em;
+  }
+  
+  .section-heading {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 6em;
+  }
+
+  .section-contact-heading {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+  
+  .social-media-links { 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+.social-media-links i {
+
+    font-size: 2.3rem;
+    padding: 10px;
+    border-radius: 3px;
+    color: #fff;
+    background: #3273dc;
+
+}
+
+.social-media-links div {
+    margin: 0 10px;
+}
