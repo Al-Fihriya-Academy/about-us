@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,6 +35,12 @@
             <i class="fa fa-envelope"></i>
           </span>
           <span>Contact</span>
+        </a>
+        <a class="navbar-item" href="#contributors">
+          <span class="icon">
+            <i class="fa fa-users"></i>
+          </span>
+          <span>Contributors</span>
         </a>
       </div>
     </div>
@@ -91,14 +95,43 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="section-heading">
+          <h1 class="h1">Contributors</h1>
+    <div class="app" id="app">
+  <form class="form" v-on:submit="addTodo">
+    <input class="input form__input" v-model="inputVal"/>
+    <button class="btn form__submit-btn" type="submit">Add Your name</button>
+  </form>
+  <transition-group tag="ol" name="list" class="todo-list">
+    <li
+      class="todo-list__item"
+      v-bind:class="{ complete: todo.complete }"
+      v-bind:key="index"
+      v-for="(todo, index) in filteredTodos">
+      <button
+        class="todo-list__item-content"
+        v-on:click="toggleTodo(todo)">
+      </button>
+       <button
+        class="todo-list__item-content"
+        v-on:click="toggleTodo(todo)">
+        {{ todo.text }}
+      </button>
+      <button
+        class="btn todo-list__item-remove"
+        v-on:click="deleteTodo(index)">
+        <i class="fa" v-bind:class="[todo.complete ? 'fa-check' : 'fa-times']"></i>
+      </button>
+    </li>
+  </transition-group>
+</div>
+  </footer>
+     <div class="section-heading">
       <p>
         <a href="https://www.facebook.com/groups/AlfihriyaAcademyComputerScience/">Al Fihriya Academy</a>. The source code is licensed
         <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
       </p>
       </p>
     </div>
-  </footer>
 </body>
 
 </html>
