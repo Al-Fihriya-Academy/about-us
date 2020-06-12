@@ -1,104 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="description" content="Al Fihriya Academy">
+	<meta name="keywords" content="Al Fihriya Academy">
+  	<meta name="author" content="Al Fihriya Academy">
+  	<title>Al Fihriya Academy</title>
+    <link rel="stylesheet" href="accueil.html">
+    <script lang="javascript" href = "accueil.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body class="body">
+ <!--Javascript-->
+ <script>
+   Swal.fire({
+  title: 'Bonjour dans Al Fihriya Academy.',
+  width: 600,
+  padding: '3em',
+  background: '#fff url(/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+   </script>
+   <!--CSS-->
+ <style>
+      .body{
+  font:15px Arial, Helvetica,sans-serif; 
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+/* General Styles */
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Personal - Free Bulma template</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.2/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script async type="text/javascript" src="js/menu.js"></script>
-</head>
+.container{
+  width:80%; 
+  margin:auto;
+  overflow:hidden;
+}
 
-<body>
-  <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
+.container__title{
+  font-size:22px;
+  margin-top:50px;
+}
+
+/* Header */
+
+.header{
+  background:#fff;
+  display:flex;
+  position:fixed;
+  width:100%;
+  padding:20px 20px;
+  z-index:3;
+  box-shadow:-6px 8px 6px -6px #000;
+}
+
+.navbar{
+  float:right;
+  margin-top:8px; 
+}
+
+.menu{
+  margin:0;
+  padding:0;
+}
+
+.menu__item{
+  display:inline;
+  padding:0 16px 0 16px; 
+}
+
+.menu__link{
+  color:#000;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px; 
+}
+
+.menu__link:hover{
+  color:#1293d4;
+  font-weight:bold;
+}
+
+/* Masthead */
+
+.masthead{
+  min-height:600px;
+  color: #fff;
+  background-size: 600px;
+
+  background-image: url("https://yt3.ggpht.com/a/AATXAJyg5nJ8ocWUiaJ5IYAgCbAtfoPOFkrmVfWRCQ=s100-c-k-c0xffffffff-no-rj-mo");
+}
+
+.masthead__title{
+  margin-top:200px;
+  margin-bottom:15px;
+  font-size:40px;
+  font-weight:500;
+}
+
+.masthead__description{
+  font-size:20px;
+}
+
+/* Newsletter */
+
+.newsletter{
+  padding:15px;
+  color:#000;
+  background:#fff;
+}
+
+.newsletter__title{
+  float:left;
+  font-size:20px;
+}
+
+.newsletter-form{
+  float:right;
+  margin-top:15px;
+}
+
+.newsletter__input{
+  width:100%;
+  height:35px;
+  border:1px solid #808080;
+  margin-bottom:5px; 
+  border-radius: 4px;
+  background-color:#fff;
+  color:#000;
+ }
+
+.newsletter__input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+  color:#fff;
+}
+
+.newsletter__input:focus{
+  outline:none; 
+  border:1px solid #58bff6; 
+  color:#000;
+ }
+
+.btn-submit{
+  height:35px;
+  background:#1293d4;
+  border-radius:4px;  
+  border:0;
+  padding-left:20px;
+  padding-right:20px;
+  color:#fff;
+}
+
+.btn-submit:hover{
+  background:#32b0ee;
+}
+
+.btn-submit:focus{
+  outline:none; 
+}
+
+/* Services */
+
+.services{
+  margin-bottom:50px;
+}
+
+.service{
+  float:left;
+  text-align:center;
+  width:30%;
+  padding:10px;
+}
+
+.service__icon{
+  color:#4169e1;
+  font-size:350%;
+  text-align:center;
+  padding-top:10%;
+}
+.img1{
+  height:130px ;
+  width: 130px;
+  border-radius: 20%;
+}
+.img1:hover{
+  scale: 1.5;
+}
+.img2{
+  height: 130px;
+  width: 130px;
+  border-radius: 20%;
+}
+.img2:hover{
+  scale: 1.5;
+}
+.img3{
+  height: 130px;
+  width: 130px;
+  border-radius: 20%;
+}
+.img3:hover{
+  scale: 1.5;
+}
+.img4{
+  height: 130px;
+  width: 130px;
+  border-radius: 20%;
+}
+.img4:hover{
+  scale: 1.5;
+}
+/* About */
+
+.about{
+  background-color:#fff;
+}
+
+.article-col{
+  float:left;
+  width:55%;  
+}
+
+.article-col__description{
+  text-align:justify;
+}
+
+.aside{
+  float:right;
+  width:38%;
+  margin-top:10px;
+}
+
+.container-aside{
+  margin-bottom:50px;
+}
+
+/* Contact Form */
+
+.contact-form__label{
+  color:#808080;
+  font-weight:bold;
+}
+
+.newsletter__input--contact-form-textarea{
+  height:120px;
+}
+
+.newsletter__input--contact-form-textarea:focus{
+  outline:none; 
+  border:1px solid #58bff6; 
+  color:#000;   
+ }
+ 
+.btn-submit--contact-form{
+  margin-bottom:50px;
+  width:101%;
+}
+
+.btn-submit--contact-form:focus{
+  outline:none; 
+}
+
+/* Social */
+
+.icons-social{
+  text-align:center;
+  padding:5px;
+}
+
+.menu--list-social{
+  list-style-type:none;
+}
+
+.icons-social__item{
+  display:inline;
+}
+
+.icons-social__i{
+  font-size:23px;
+  color:#444442;
+  padding:10px;
+  transition:all 0.3s linear;    
+}
+
+.icons-social__i:hover{
+  color:#fff;
+  transform:translateY(-7px);
+}
+
+/* Footer */
+
+.footer{
+  padding:40px;  
+  color:#444442;
+  background-color:#111;
+  text-align:center;
+}
+
+.container-footer__link{
+  color:#444442;
+  text-decoration:none;
+}
+
+.container-footer__link:hover{
+  color:#fff;
+}
+
+/* Media Queries */
+
+@media(max-width: 800px){
+  .header{
+    padding-bottom:20px;
+  }
+
+  .navbar{
+    text-align:center; 
+    width:100%; 
+    padding:0 20px;
+  }
+  
+  .menu__item{
+    float:none; 
+    text-align:center; 
+    width:100%; 
+  }
+    
+  .service{
+    width:100%;
+    padding:0;
+    text-align:center;
+    float:none;
+  }
+      
+  .newsletter__title{
+    float:none; 
+    text-align:center; 
+    width:100%; 
+    margin-top:40px;
+  }
+  
+  .newsletter-form{
+    float:none; 
+    text-align:center; 
+    width:100%; 
+  }
+  
+  .newsletter__input{
+    width:98%;
+  }
+  
+  .newsletter__input[type="email"]{
+    width:98%;
+    margin-bottom:5px;
+  }
+  
+  .btn-submit{
+    display:block;
+    width:100%;
+  }
+  
+  .article-col{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+  
+  .aside{
+    width:100%; 
+    float:none;
+    text-align:center;
+    padding-bottom:20px;
+  }
+  
+  .container-aside{
+    margin-top:20px;
+    width:100%;
+    padding:0;
+  }
+
+  .btn-submit--contact-form{
+    width:100%;
+  }
+}
+
+@media (max-width: 450px){
+  .menu__item{
+    padding:0px 4px 0px 4px;
+  }
+
+  .menu__link{
+    font-size:13px;
+  }
+  
+  .masthead__title{
+    font-size:45px;
+  }
+
+  .masthead__description{
+    font-size:17px;
+  }
+  
+  .newsletter__input[type="email"]{
+    width:96%;
+  }
+  
+  .container-aside{
+    width:100%;
+  }
+  .container-aside__img{
+    height:436px;     
+  }
+}
+  </style>
+  <!-- Navigation -->
+  
+    <header class="header">
+      <div class="container">        
+        <nav class="navbar">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#home-section">Accueil</a></li>
+            <li class="menu__item"><a class="menu__link" href="#services-section">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about-section">A propos</a></li>
+            <li class="menu__item"><a class="menu__link" href="video.html">Video</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="#about">
-          <span class="icon">
-            <i class="fa fa-info"></i>
-          </span>
-          <span>About</span>
-        </a>
-        <a class="navbar-item" href="#contact">
-          <span class="icon">
-            <i class="fa fa-envelope"></i>
-          </span>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <section class="hero is-link is-fullheight is-fullheight-with-navbar" id="about">
-    <div class="hero-body">
+    </header>
+  <!-- Masthead -->  
+  
+    <section class="masthead" id="home-section">
       <div class="container">
-        <h3 class="subtitle is-4">
-            Salam! We are
-        </h3>
-        <h1 class="title is-1">
-            Al Fihriya Academy
-        </h1>
-        <h2 class="subtitle is-3">
-          We help you to improve your skills in computer science
-        </h2>
+        <h1 class="masthead__title">Al Fihriya Academy.</h1>
+        </hr>
+        <p class="masthead__description">
+          هذه المجموعة تهدف إلى نشر المعارف و العلوم و تطوير المهارات لكل الفئات. هدفنا تقديم محتوى مبسط و ديداكتيكي بالعربية و الدارجة و كل اللغات الحية.
+          المجموعة مفتوحة لكل من يهمه نشر معارفه و مكتسباته أو اكتساب وتطوير معارف جديدة.
+        </p>
       </div>
-    </div>
-  </section>
-
-
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-contact-heading ">
-        <h3 class="title is-2">Contact</h3>
-        <h4 class="subtitle is-5">Get in touch</h4>
+    </section>
+    
+    
+  <!-- Services --> 
+    
+    <section class="services" id="services-section">
+      <div class="container">  
+        <h1 class="container__title">Services</h1>	
+        <div class="service">
+          <img class="img1" src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/92357826_10217864953630511_3207808092951543808_o.jpg?_nc_cat=109&amp;_nc_sid=825194&amp;_nc_ohc=scSkQRhYTtoAX-iJ-iL&amp;_nc_ht=scontent-mad1-1.xx&amp;oh=d01fb2cb48167acaf3666555bdabce24&amp;oe=5F045A34"  alt="al fihriya academy computer science">
+          <br><br>
+          <h3>Computer Science</h3>
+          <p>هذا لفصل من الموقع يهدف إلي تطوير مهارات ناس الذين يريدون تعلم علوم الحاسوب</p>
+        </div>
+        <div class="service">
+          <img class="img2" src="https://scontent.frak1-1.fna.fbcdn.net/v/t1.0-9/92333277_10217864969630911_5650781728524992512_o.jpg?_nc_cat=101&amp;_nc_sid=825194&amp;_nc_oc=AQkhTEb0S7eBI_3lczc0w8vblI5Vh2hDioFnWKTYivNt3B3F4JKkujHhn4GOQlrYa7w&amp;_nc_ht=scontent.frak1-1.fna&amp;oh=d979f7233620510976f267594c50e886&amp;oe=5F0623EB" alt="al fihriya academy primaire">
+          <br><br>
+          <h3>Elementry School</h3>
+          <p>هذا الفصل لطلاب الابتدائي</p>
+        </div>
+        <div class="service">
+          <img class="img3" src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/92411896_10217864982191225_686242710549430272_o.jpg?_nc_cat=111&amp;_nc_sid=825194&amp;_nc_oc=AQlggKLi4GdMaD7_jN38y5XvMFQGLhkzXEJctdeBS74HRxbuoixBdAsO96LIfJHxGLQ&amp;_nc_ht=scontent-mad1-1.xx&amp;oh=34e3afe9b1f4d364bb5906e24c125792&amp;oe=5F02830E" alt="al fihriya academy collége">
+          <br><br>
+          <h3>Middle School</h3>
+          <p>هذا الفصل لطلاب الإعدادي</p>
+        </div>
+        <div class="service">
+          <img class="img4" src="https://scontent.frak1-2.fna.fbcdn.net/v/t1.0-9/92434317_10217864994191525_3913354130285920256_o.jpg?_nc_cat=102&amp;_nc_sid=825194&amp;_nc_oc=AQkX1icK_VaNiNufru2NFwT71BKWPoZKZGqxEOdItD-uTnlQH-P4UaCsSW1peFa48ds&amp;_nc_ht=scontent.frak1-2.fna&amp;oh=20e5307dcc56b994d0d9752ac0d933e0&amp;oe=5F042613" alt="al fihriya academy lycée">
+          <br><br>
+          <h3>High School</h3>
+          <p>هذا الفصل لطلاب الثانوي</p>
+        </div>
       </div>
-
-      <div class="social-media-links">
-        <div>
-            <a href="https://github.com/Al-Fihriya-Academy"><i class="fa fa-github"></i></a>
-        </div>
-        <div>
-            <a href="https://www.facebook.com/groups/AlfihriyaAcademyComputerScience/"><i class="fa fa-facebook-square"></i></a>
-        </div>
-        <div>
-            <a href="https://www.youtube.com/channel/UC9NMlidXGKVIMMkXJsWRiyA"><i class="fa fa-youtube-play"></i></a>
-        </div>
-        <div>
-            <a href="https://discord.com/invite/5TZjfjs?fbclid=IwAR002nXnqT7St0j6Hf2c-NQgBnWeqfNY70KYaFoDQ1Tlr9OtP6ud_At14o0" target="_blank"><i class="fa fa-comments"></i></a>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/alfihriyaacademy/" target="_blank"><i class="fa fa-instagram"></i></a>
-        </div>
-    </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="section-heading">
-      <p>
-        <a href="https://www.facebook.com/groups/AlfihriyaAcademyComputerScience/">Al Fihriya Academy</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-      </p>
-      </p>
-    </div>
-  </footer>
-</body>
-
-</html>
+    </section>
+    
+  <!-- About --> 
+    
+    <section class="about" id="about-section">
+      <div class="container">
+        <h1 class="container__title">A Propros</h1>
+        <article class="article-col">
+          <p class="article-col__description">
+            هذه المجموعة تهدف إلى نشر المعارف و العلوم و تطوير المهارات لكل الفئات. هدفنا تقديم محتوى مبسط و ديداكتيكي بالعربية و الدارجة و كل اللغات الحية. المجموعة مفتوحة لكل من يهمه نشر معارفه و مكتسباته أو اكتساب وتطوير معارف جديدة. 
+            هذه المجموعة تهدف إلى نشر المعارف و العلوم و تطوير المهارات لكل الفئات. هدفنا تقديم محتوى مبسط و ديداكتيكي بالعربية و الدارجة و كل اللغات الحية. المجموعة مفتوحة لكل من يهمه نشر معارفه و مكتسباته أو اكتساب وتطوير معارف جديدة. 
+          </p>
+        </article>
+        <aside class="aside">
+          <div class="container-aside">
+            <img class="container-aside__img" src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/92357826_10217864953630511_3207808092951543808_o.jpg?_nc_cat=109&amp;_nc_sid=825194&amp;_nc_ohc=scSkQRhYTtoAX-iJ-iL&amp;_nc_ht=scontent-mad1-1.xx&amp;oh=d01fb2cb48167acaf3666555bdabce24&amp;oe=5F045A34" height="597px" alt="al fihriya academy computer science">    
+          </div>
+        </aside>
+      </div>
+    </section>
+    
+  <!-- Contact Form --> 
+    
+    <section class="contact" id="contact-section">
+      <div class="container">
+      	 <h1 class="container__title">Contact</h1><br>
+         <article class="article-col">
+           <form class="contact-form">
+             <label class="contact-form__label">Name</label>
+             <input class="newsletter__input newsletter__input--contact-form" type="text" name="name" placeholder="Enter your name">
+             <br>
+             <label class="contact-form__label">Email</label>
+             <input class="newsletter__input newsletter__input--contact-form" type="text" name="email" placeholder="Enter your email">
+             <br>
+             <label class="contact-form__label">Phone</label>
+             <input class="newsletter__input newsletter__input--contact-form" type="text" name="phone" placeholder="Enter your phone">
+             <br>
+             <label class="contact-form__label">City</label>
+             <input class="newsletter__input newsletter__input--contact-form" type="text" name="mobile" placeholder="Enter your City">
+             <br>
+             <label class="contact-form__label">Message</label>
+             <textarea class="newsletter__input newsletter__input--contact-form-textarea"></textarea>
+             <br>
+             <button class="btn-submit btn-submit--contact-form" type="submit"  href="">Send</button>
+           </form>
+         </article>
+      </div>
+    </section>
+    
+  <!-- Footer --> 
+    
+    <footer class="footer">
+      <div class="icons-social">
+        <ul class="menu menu--list-social">          
+          <li class="icons-social__item"><a class="icons-social__link" href="#"><i class="icons-social__i fab fa-instagram"></i></a></li>
+          <li class="icons-social__item"><a class="icons-social__link" href="https://www.facebook.com/groups/AlfihriyaAcademy/"><i class="icons-social__i fab fa-facebook"></i></a></li>
+        </ul>
+      </div>
+      <div class="container-footer">
+        <p>Design by <a class="container-footer__link" target="_blank">Youssef Boumhaout</a> | Copyright &copy; 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>  
