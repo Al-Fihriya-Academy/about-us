@@ -12,7 +12,7 @@ Hna [https://www.youtube.com/watch?v=b5J8sBlHd1Y&t=1s](https://www.youtube.com/w
 
 ## Ma3endich m3a HTML/CSS walakin bghit nzid smiti ? :see_no_evil: :grin:
 
-Hania, chouf ghadi t7el l fichier index.html ou zid mour akhir ``div`` dial akhir contributor : 
+Hania, chouf ghadi t7el l fichier index.html ou zid smitek mour akhir ``div`` dial akhir contributor : 
 
 ```HTML
         <div class="column is-4">
@@ -22,13 +22,13 @@ Hania, chouf ghadi t7el l fichier index.html ou zid mour akhir ``div`` dial akhi
                 <div class="media-left">
                   <figure class="image is-48x48">
                     <a href="#">
-                      <img src="https://avatars3.githubusercontent.com/u/16905576" alt="geekloper">
+                      <img src="link dial tswira dialek f github" alt="login dialek f github">
                     </a>
                   </figure>
                 </div>
                 <div class="media-content">
-                  <p class="title is-4">geekloper</p>
-                  <p class="subtitle is-6">@geekloper</p>
+                  <p class="title is-4">Smitek</p>
+                  <p class="subtitle is-6">@login dial github</p>
                 </div>
               </div>
             </div>
