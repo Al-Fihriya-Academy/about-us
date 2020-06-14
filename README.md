@@ -15,20 +15,20 @@ Hna [https://www.youtube.com/watch?v=b5J8sBlHd1Y&t=1s](https://www.youtube.com/w
 Hania, chouf ghadi t7el l fichier index.html ou zid smitek mour akhir ``div`` dial akhir contributor : 
 
 ```HTML
-        <div class="column is-4">
+        <div class="column is-3">
           <div class="card">
             <div class="card-content">
               <div class="media">
                 <div class="media-left">
                   <figure class="image is-48x48">
-                    <a href="#">
-                      <img src="link dial tswira dialek f github" alt="login dialek f github">
+                    <a href="https://github.com/login dialek" target="_blank">
+                      <img src="link dial tswira dialek f github" alt="login dialek">
                     </a>
                   </figure>
                 </div>
                 <div class="media-content">
                   <p class="title is-4">Smitek</p>
-                  <p class="subtitle is-6">@login dial github</p>
+                  <p class="subtitle is-6">@login dialek</p>
                 </div>
               </div>
             </div>
