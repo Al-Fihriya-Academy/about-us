@@ -12,7 +12,7 @@ Hna [https://www.youtube.com/watch?v=b5J8sBlHd1Y&t=1s](https://www.youtube.com/w
 
 ## Ma3endich m3a HTML/CSS walakin bghit nzid smiti ? :see_no_evil: :grin:
 
-Hania, chouf ghadi t7el l fichier index.html ou zid smitek mour akhir ``div`` dial akhir contributor : 
+Hania, chouf ghadi t7el l fichier index.html ou zid had lcode (zid smytek w lien dialk f Github) mour akhir ``div`` dial akhir contributor:
 
 ```HTML
         <div class="column is-3">
@@ -35,6 +35,7 @@ Hania, chouf ghadi t7el l fichier index.html ou zid smitek mour akhir ``div`` di
           </div>
         </div>
 ```
+<img src="https://i.imgur.com/mmNMCGH.gif" width="480" style="display: block; margin: 0 auto;">
 
 ## 3endi fikra jdida bghit nzidha ? :sparkling_heart:
 7el issue [hna](https://github.com/Al-Fihriya-Academy/about-us/issues) ou tsena chi hed member ygoulek t9der tkhdam 3lih ou t7aaaan ;-) :rocket::rocket:
