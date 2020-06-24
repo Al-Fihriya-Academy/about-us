@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Personal - Free Bulma template</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -243,13 +245,32 @@
   </section>
   <!-- Contact -->
   <section class="section" id="contact">
-    <div class="container">
+    <div class="columns">
       <div class="section-contact-heading ">
-        <h3 class="title is-2">Contact</h3>
+        <h3 class="title is-2">Contact our teams :</h3>
         <h4 class="subtitle is-5">Get in touch</h4>
       </div>
-
-      <div class="social-media-links">
+ <div class="form">
+<form
+  action="https://formspree.io/mlepnabn"
+  method="POST"
+>
+<br><br><br><br><br>
+<label class="box has-background-info">Name :</label>
+<input name="name" type="text" placeholder="What is your name?" class="input"  required />
+  <br><br>
+  <label class="box has-background-info">Email :</label>
+<input class="input"  type="email" name="emailaddress" placeholder="What is your email?"  type="email" required />
+  <br><br>
+  <label class="box has-background-info">Message :</label>
+    <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="message" required></textarea>
+    <br>
+      <button class="button is-primary is-outlined" id="my-form-button">Submit</button>
+  <br><br>
+  <p id="my-form-status"></p>
+</form>
+     <br><br>
+    <div class="social-media-links">
         <div>
           <a href="https://github.com/Al-Fihriya-Academy" target="_blank">
             <i class="fa fa-github"></i>
@@ -293,6 +314,7 @@
       </p>
     </div>
   </footer>
+
 </body>
 
 </html>
