@@ -518,6 +518,7 @@ h3 {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  margin-bottom: 30px;
 }
 
 /* line 123, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_btn.scss */
@@ -1233,7 +1234,7 @@ h3 {
 
 /* line 5, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_slider.scss */
 .slider_area .single_slider {
-  height: 100vh;
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1292,8 +1293,8 @@ h3 {
   text-transform: capitalize;
   font-weight: 400;
   line-height: 70px;
-  margin-bottom: 50px;
-  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-top: 150px;
 }
 
 @media (max-width: 767px) {
