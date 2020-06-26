@@ -1,6 +1,6 @@
 # about-us
 
-Exercice houwa t7el une pull request ou tzid smitek f contributors section li kayna f site: [https://al-fihriya-academy.github.io/about-us/](https://al-fihriya-academy.github.io/about-us/)
+Exercice houwa t7el une pull request ou tzid smitek f contributors section li kayna f site: [https://alfihriyaacademy.com/](https://alfihriyaacademy.com/)
 
 ## Fine hdertou 3la had l'exercice ? :movie_camera:
 
