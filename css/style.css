@@ -6702,11 +6702,11 @@ h6 {
     margin-bottom: 6em;
   }
 
-  .section-contact-heading {
+  /* .section-contact-heading {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 4em;
-  }
+  } */
   
   .social-media-links { 
     display: -webkit-box;
@@ -6732,4 +6732,39 @@ h6 {
 
 .social-media-links div {
     margin: 0 10px;
+}
+
+/* 
+hada hale l mochkile dial bootstrap Masonry bach Contributors card ikounou responsive
+source: https://stackoverflow.com/a/43117538/1507659
+*/
+
+@media (min-width:356px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+      column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+      column-count: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+      column-count: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+      column-count: 5;
+  }
 }
