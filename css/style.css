@@ -13,6 +13,105 @@
   justify-content: start;
 }
 
+/*Login*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+/* fontawesome */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* Simple Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+/* Form Layout */
+.form-wrapper {
+  background: #fafafa;
+  margin: 3em auto;
+  padding: 0 1em;
+  max-width: 370px;
+}
+
+h1 {
+  text-align: center;
+  padding: 1em 0;
+}
+
+form {
+  padding: 0 1.5em;
+}
+
+.form-item {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+.form-item input {
+  background: #fafafa;
+  border: none;
+  border-bottom: 2px solid #e9e9e9;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 50px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.form-item input:focus {
+  border-bottom: 2px solid #c0c0c0;
+  outline: none;
+}
+
+.button-panel {
+  margin: 2em 0 0;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: #f16272;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+
+.button:hover {
+  background: #ee3e52;
+}
+
+.form-footer {
+  font-size: 1em;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.form-footer a {
+  color: #8c8c8c;
+  text-decoration: none;
+  transition: border-color 0.3s;
+}
+
+.form-footer a:hover {
+  border-bottom: 1px dotted #8c8c8c;
+}
+
+.log{
+  font-size: 16px;
+  margin-right: 50px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
 /* line 22, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_extend.scss */
 .header-area .main-header-area.sticky {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a64eee+0,3c35ce+100 */
@@ -410,6 +509,8 @@ h3 {
   transition: 0.5s;
   cursor: pointer;
 }
+
+
 
 /* line 45, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_btn.scss */
 .boxed-btn3:hover {
@@ -6612,9 +6713,7 @@ h6 {
   -webkit-transition: 0.8s;
   transition: 0.8s;
   background: -webkit-linear-gradient(131deg, #feb47b 0%, #ff7e5f 99%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: 1s;
 }
 
 /* line 150, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
@@ -6738,7 +6837,6 @@ h6 {
 hada hale l mochkile dial bootstrap Masonry bach Contributors card ikounou responsive
 source: https://stackoverflow.com/a/43117538/1507659
 */
-
 @media (min-width:356px) {
   .card-columns {
     column-count: 1;
@@ -6781,5 +6879,3 @@ source: https://stackoverflow.com/a/43117538/1507659
     height: 200px;
     object-fit: fill; 
   }
-
-  
